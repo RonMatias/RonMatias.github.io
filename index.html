@@ -10,39 +10,58 @@
             text-align: center;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: auto;
+            margin-top: 50px;
         }
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        h1, h2 {
+        h1 {
+            font-size: 28px;
             color: #333;
         }
-        .section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 5px;
-            background: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
         }
-        button {
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            color: #fff;
             background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 16px;
-            cursor: pointer;
+            text-decoration: none;
             border-radius: 5px;
-            margin: 10
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>Hello, this is Ronald!</h1>
+        <img src="your-image.jpg" alt="Ronald Matias" class="profile-img">
+        
+        <div class="buttons">
+            <a href="resume.pdf" class="btn" target="_blank">View My Resume</a>
+            <a href="https://www.youtube.com/your-channel" class="btn" target="_blank">Visit My YouTube</a>
+        </div>
+    </div>
+
+</body>
+</html>
