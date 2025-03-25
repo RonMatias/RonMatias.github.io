@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronald's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .profile {
+            margin-top: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            background: red;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Ronald's Profile Picture">
+            <h2>Ronald</h2>
+        </div>
+        <div class="social-links">
+            <a href="https://www.youtube.com/yourchannel" target="_blank">My YouTube Channel</a>
+        </div>
+        <h3>Graphic Design Samples</h3>
+        <div class="gallery">
+            <img src="design1.jpg" alt="Design Sample 1">
+            <img src="design2.jpg" alt="Design Sample 2">
+            <img src="design3.jpg" alt="Design Sample 3">
+        </div>
+    </div>
+</body>
+</html>
